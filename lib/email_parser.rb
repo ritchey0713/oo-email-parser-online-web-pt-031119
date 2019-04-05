@@ -19,7 +19,7 @@ class EmailParser
   def parse 
         email_array = []
     email_array << @emails.split(/[,\s]/)
-    binding.pry
-    email_array.flatten.delete_if {|email| email == ""}.uniq
+    email_array.flatten.delete("")
+    # email_array.flatten.delete_if {|email| email == ""}.uniq
   end 
 end
