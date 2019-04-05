@@ -19,6 +19,6 @@ class EmailParser
     email_array << @emails.split(/[,\s]/)
     email_array.flatten
     email_array.delete("")
-    return email_array
+    return email_array.flatten 
   end 
 end
